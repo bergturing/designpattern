@@ -1,14 +1,15 @@
-package com.berg.designpattern.singleton.method_7;
+package com.berg.designpattern.singleton.method_8;
 
 /**
  * 双重校验锁实现单例模式
+ * 进阶版
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/9
  */
 public class Singleton {
 
-    private static Singleton instance;
+    private volatile static Singleton instance;
 
     private Singleton() {
     }

@@ -12,7 +12,8 @@ public class Singleton {
         private static final Singleton INSTANCE = new Singleton();
     }
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     public static Singleton of() {
         return SingletonHandler.INSTANCE;

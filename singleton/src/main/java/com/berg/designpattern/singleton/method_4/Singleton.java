@@ -15,7 +15,8 @@ public class Singleton {
         instance = new Singleton();
     }
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     public static Singleton of() {
         return instance;

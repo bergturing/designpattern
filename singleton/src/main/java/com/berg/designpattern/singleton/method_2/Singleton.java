@@ -11,10 +11,11 @@ public class Singleton {
 
     private static Singleton instance;
 
-    private Singleton() {}
+    private Singleton() {
+    }
 
     private static synchronized Singleton of() {
-        if(null == instance) {
+        if (null == instance) {
             instance = new Singleton();
         }
 
