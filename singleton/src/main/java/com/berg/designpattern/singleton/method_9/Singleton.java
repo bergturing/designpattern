@@ -8,13 +8,15 @@ package com.berg.designpattern.singleton.method_9;
  * @apiNote 2018/11/9
  */
 public class Singleton {
-    private FinalWrapper<Singleton> helperWrapper = null;
+    private volatile static FinalWrapper<Singleton> helperWrapper = null;
 
-    public Singleton getHelper() {
+    private Singleton() {}
+
+    public static Singleton getHelper() {
         FinalWrapper<Singleton> wrapper = helperWrapper;
 
         if (null == wrapper) {
-            synchronized (this) {
+            synchronized (Singleton.class) {
                 if (null == helperWrapper) {
                     helperWrapper = new FinalWrapper<>(new Singleton());
                 }
@@ -27,9 +29,9 @@ public class Singleton {
 }
 
 class FinalWrapper<T> {
-    public final T value;
+    final T value;
 
-    public FinalWrapper(T value) {
+    FinalWrapper(T value) {
         this.value = value;
     }
 }
