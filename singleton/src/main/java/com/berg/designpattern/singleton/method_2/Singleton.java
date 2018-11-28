@@ -1,7 +1,7 @@
 package com.berg.designpattern.singleton.method_2;
 
 /**
- * 懒汉式的单例模式
+ * 方法同步锁的单例模式
  * 线程安全
  *
  * @author bo.he02@hand-china.com
