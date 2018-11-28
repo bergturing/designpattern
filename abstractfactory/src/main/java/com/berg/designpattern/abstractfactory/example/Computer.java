@@ -3,6 +3,8 @@ package com.berg.designpattern.abstractfactory.example;
 import com.berg.designpattern.abstractfactory.example.factory.ThemeFactory;
 
 /**
+ * 计算机
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */

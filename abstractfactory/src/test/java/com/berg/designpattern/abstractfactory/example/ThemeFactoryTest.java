@@ -7,6 +7,8 @@ import com.berg.designpattern.abstractfactory.example.factory.ThemeFactory;
 import org.junit.Test;
 
 /**
+ * 测试主题工厂
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */

@@ -4,6 +4,8 @@ import com.berg.designpattern.abstractfactory.example.widget.Form;
 import com.berg.designpattern.abstractfactory.example.widget.Mouse;
 
 /**
+ * 主题工厂
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
