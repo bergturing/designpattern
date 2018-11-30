@@ -1,6 +1,8 @@
 package com.berg.designpattern.abstractfactory.example.widget.blue;
 
 import com.berg.designpattern.abstractfactory.example.widget.Mouse;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * 蓝色鼠标
@@ -9,8 +11,13 @@ import com.berg.designpattern.abstractfactory.example.widget.Mouse;
  * @apiNote 2018/11/28
  */
 public class BlueMouse implements Mouse {
+    /**
+     * 日志打印对象
+     */
+    private static Logger logger = LoggerFactory.getLogger(BlueMouse.class);
+
     @Override
     public void move() {
-        System.out.println("移动蓝色的鼠标");
+        logger.debug("移动蓝色的鼠标");
     }
 }

@@ -5,29 +5,41 @@ import com.berg.designpattern.abstractfactory.example.factory.BlueThemeFactory;
 import com.berg.designpattern.abstractfactory.example.factory.RedThemeFactory;
 import com.berg.designpattern.abstractfactory.example.factory.ThemeFactory;
 import org.junit.Test;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
- * 测试主题工厂
+ * 测试主题工厂测试
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
 public class ThemeFactoryTest extends AbstractfactoryApplicationTests {
+    /**
+     * 计算机
+     */
+    @Autowired
+    private Computer computer;
+
+    /**
+     * 红色的主题工厂
+     */
+    @Autowired
+    private ThemeFactory redThemeFactory;
+
+    /**
+     * 蓝色的主题工厂
+     */
+    @Autowired
+    private ThemeFactory blueThemeFactory;
 
     @Test
-    public void test() {
-        //主题工厂
-        ThemeFactory themeFactory;
-        Computer computer = new Computer();
-
+    public void testThemeFactory() {
         //红色的主题
-        themeFactory = new RedThemeFactory();
-        computer.setThemeFactory(themeFactory);
-        computer.open();
+        this.computer.setThemeFactory(this.redThemeFactory);
+        this.computer.open();
 
         //蓝色主题
-        themeFactory = new BlueThemeFactory();
-        computer.setThemeFactory(themeFactory);
-        computer.open();
+        this.computer.setThemeFactory(this.blueThemeFactory);
+        this.computer.open();
     }
 }

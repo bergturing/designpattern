@@ -4,6 +4,7 @@ import com.berg.designpattern.abstractfactory.example.widget.Form;
 import com.berg.designpattern.abstractfactory.example.widget.Mouse;
 import com.berg.designpattern.abstractfactory.example.widget.red.RedForm;
 import com.berg.designpattern.abstractfactory.example.widget.red.RedMouse;
+import org.springframework.stereotype.Component;
 
 /**
  * 红色的主题
@@ -11,6 +12,7 @@ import com.berg.designpattern.abstractfactory.example.widget.red.RedMouse;
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
+@Component
 public class RedThemeFactory implements ThemeFactory {
     @Override
     public Form createForm() {
