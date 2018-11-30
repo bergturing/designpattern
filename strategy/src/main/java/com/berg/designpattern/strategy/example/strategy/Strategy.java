@@ -1,6 +1,8 @@
 package com.berg.designpattern.strategy.example.strategy;
 
 /**
+ * 计算策略接口
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/29
  */
