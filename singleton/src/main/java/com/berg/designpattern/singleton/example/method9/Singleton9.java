@@ -12,7 +12,7 @@ public class Singleton9 {
 
     private Singleton9() {}
 
-    public static Singleton9 getHelper() {
+    public static Singleton9 of() {
         FinalWrapper<Singleton9> wrapper = helperWrapper;
 
         if (null == wrapper) {
