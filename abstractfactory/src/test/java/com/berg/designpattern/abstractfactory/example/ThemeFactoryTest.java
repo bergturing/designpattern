@@ -1,8 +1,6 @@
 package com.berg.designpattern.abstractfactory.example;
 
 import com.berg.designpattern.abstractfactory.AbstractfactoryApplicationTests;
-import com.berg.designpattern.abstractfactory.example.factory.BlueThemeFactory;
-import com.berg.designpattern.abstractfactory.example.factory.RedThemeFactory;
 import com.berg.designpattern.abstractfactory.example.factory.ThemeFactory;
 import org.junit.Test;
 import org.springframework.beans.factory.annotation.Autowired;

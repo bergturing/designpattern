@@ -1,7 +1,6 @@
 package com.berg.designpattern.abstractfactory.example.widget.red;
 
 import com.berg.designpattern.abstractfactory.example.widget.Mouse;
-import com.berg.designpattern.abstractfactory.example.widget.blue.BlueMouse;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
