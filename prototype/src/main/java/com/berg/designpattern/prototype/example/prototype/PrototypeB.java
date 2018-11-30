@@ -15,8 +15,8 @@ public class PrototypeB implements Prototype {
         Prototype prototype = null;
 
         try {
-            prototype = (Prototype)super.clone();
-        }catch (CloneNotSupportedException e) {
+            prototype = (Prototype) super.clone();
+        } catch (CloneNotSupportedException e) {
             e.printStackTrace();
         }
 
