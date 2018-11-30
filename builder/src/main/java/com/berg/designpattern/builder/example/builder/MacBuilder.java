@@ -1,45 +1,67 @@
 package com.berg.designpattern.builder.example.builder;
 
 import com.berg.designpattern.builder.example.product.Computer;
-import com.berg.designpattern.builder.example.widget.mac.MacCpu;
-import com.berg.designpattern.builder.example.widget.mac.MacHardDisk;
-import com.berg.designpattern.builder.example.widget.mac.MacMarquee;
-import com.berg.designpattern.builder.example.widget.mac.MacMotherboard;
+import com.berg.designpattern.builder.example.widget.Cpu;
+import com.berg.designpattern.builder.example.widget.HardDisk;
+import com.berg.designpattern.builder.example.widget.Marquee;
+import com.berg.designpattern.builder.example.widget.Motherboard;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 /**
+ * Mac计算机构造者
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
-public class MacBuilder implements Builder {
+@Component
+public class MacBuilder extends AbstractBuilder {
+    /**
+     * mac的cpu
+     */
+    private final Cpu macCpu;
 
     /**
-     * Mac计算机
+     * mac的硬盘
      */
-    private Computer mac = new Computer();
+    private final HardDisk macHardDisk;
 
+    /**
+     * mac的跑马灯
+     */
+    private final Marquee macMarquee;
+
+    /**
+     * mac的主板
+     */
+    private final Motherboard macMotherboard;
+
+    @Autowired
+    public MacBuilder(Computer computer, Cpu macCpu, HardDisk macHardDisk, Marquee macMarquee, Motherboard macMotherboard) {
+        super(computer);
+        this.macCpu = macCpu;
+        this.macHardDisk = macHardDisk;
+        this.macMarquee = macMarquee;
+        this.macMotherboard = macMotherboard;
+    }
 
     @Override
     public void builtCpu() {
-        this.mac.setCpu(new MacCpu());
+        this.getComputer().setCpu(this.macCpu);
     }
 
     @Override
     public void builtHardDisk() {
-        this.mac.setHardDisk(new MacHardDisk());
+        this.getComputer().setHardDisk(this.macHardDisk);
     }
 
     @Override
     public void builtMarquee() {
-        this.mac.setMarquee(new MacMarquee());
+        this.getComputer().setMarquee(this.macMarquee);
     }
 
     @Override
     public void builtMotherboard() {
-        this.mac.setMotherboard(new MacMotherboard());
-    }
-
-    @Override
-    public Computer getComputer() {
-        return this.mac;
+        this.getComputer().setMotherboard(this.macMotherboard);
     }
 }

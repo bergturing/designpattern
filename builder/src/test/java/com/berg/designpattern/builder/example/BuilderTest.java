@@ -2,39 +2,72 @@ package com.berg.designpattern.builder.example;
 
 import com.berg.designpattern.builder.BuilderApplicationTests;
 import com.berg.designpattern.builder.example.builder.Builder;
-import com.berg.designpattern.builder.example.builder.MacBuilder;
-import com.berg.designpattern.builder.example.builder.MacProBuilder;
 import com.berg.designpattern.builder.example.director.Director;
-import com.berg.designpattern.builder.example.director.HighConfDirector;
-import com.berg.designpattern.builder.example.director.LowConfDirector;
 import com.berg.designpattern.builder.example.product.Computer;
 import org.junit.Test;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 
 /**
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
 public class BuilderTest extends BuilderApplicationTests {
+    /**
+     * 日志打印对象
+     */
+    private static Logger logger = LoggerFactory.getLogger(BuilderTest.class);
+
+    /**
+     * 低配建造指导者
+     */
+    @Autowired
+    private Director highConfDirector;
+
+    /**
+     * 高配建造指导者
+     */
+    @Autowired
+    private Director lowConfDirector;
+
+    /**
+     * mac建造者
+     */
+    @Autowired
+    private Builder macBuilder;
+
+    /**
+     * macPro建造者
+     */
+    @Autowired
+    private Builder macProBuilder;
 
     @Test
-    public void test() {
+    public void testBuilder() {
         //创建一个低配的mac
-        System.out.println("创建一个低配的mac");
-        this.show(new LowConfDirector(), new MacBuilder());
+        logger.debug("创建一个低配的mac");
+        this.show(this.lowConfDirector, this.macBuilder);
 
         //创建一个高配的mac
-        System.out.println("创建一个高配的mac");
-        this.show(new HighConfDirector(), new MacBuilder());
+        logger.debug("创建一个高配的mac");
+        this.show(this.highConfDirector, this.macBuilder);
 
         //创建一个高配的mac pro
-        System.out.println("创建一个高配的mac pro");
-        this.show(new HighConfDirector(), new MacProBuilder());
+        logger.debug("创建一个高配的mac pro");
+        this.show(this.lowConfDirector, this.macProBuilder);
 
         //创建一个低配的mac pro
-        System.out.println("创建一个低配的mac pro");
-        this.show(new LowConfDirector(), new MacProBuilder());
+        logger.debug("创建一个低配的mac pro");
+        this.show(this.highConfDirector, this.macProBuilder);
     }
 
+    /**
+     * 处理结果
+     *
+     * @param director 建造指导者
+     * @param builder  建造者
+     */
     private void show(Director director, Builder builder) {
         //设置构造器
         director.setBuilder(builder);
@@ -46,6 +79,5 @@ public class BuilderTest extends BuilderApplicationTests {
 
         //展示产品
         computer.show();
-        System.out.println("");
     }
 }

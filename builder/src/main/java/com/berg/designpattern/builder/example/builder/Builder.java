@@ -3,6 +3,8 @@ package com.berg.designpattern.builder.example.builder;
 import com.berg.designpattern.builder.example.product.Computer;
 
 /**
+ * 建造者的接口
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */

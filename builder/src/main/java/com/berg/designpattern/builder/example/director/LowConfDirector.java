@@ -1,9 +1,14 @@
 package com.berg.designpattern.builder.example.director;
 
+import org.springframework.stereotype.Component;
+
 /**
+ * 低配置的构造指导者
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
+@Component
 public class LowConfDirector extends AbstractDirector {
 
     @Override
@@ -12,7 +17,7 @@ public class LowConfDirector extends AbstractDirector {
         this.getBuilder().builtHardDisk();
         this.getBuilder().builtMotherboard();
 
-        //高配的没有跑马灯
+        //低配的没有跑马灯
 //        this.getBuilder().builtMarquee();
     }
 }

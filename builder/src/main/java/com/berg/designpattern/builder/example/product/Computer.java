@@ -4,11 +4,17 @@ import com.berg.designpattern.builder.example.widget.Cpu;
 import com.berg.designpattern.builder.example.widget.HardDisk;
 import com.berg.designpattern.builder.example.widget.Marquee;
 import com.berg.designpattern.builder.example.widget.Motherboard;
+import org.springframework.context.annotation.Scope;
+import org.springframework.stereotype.Component;
 
 /**
+ * 计算机
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
+@Component
+@Scope("prototype")
 public class Computer {
     /**
      * cpu
@@ -63,19 +69,19 @@ public class Computer {
     }
 
     public void show() {
-        if(this.cpu != null) {
+        if (this.cpu != null) {
             this.cpu.run();
         }
 
-        if(this.hardDisk != null) {
+        if (this.hardDisk != null) {
             this.hardDisk.rotate();
         }
 
-        if(this.motherboard != null) {
+        if (this.motherboard != null) {
             this.motherboard.show();
         }
 
-        if(this.marquee != null) {
+        if (this.marquee != null) {
             this.marquee.flicker();
         }
     }
