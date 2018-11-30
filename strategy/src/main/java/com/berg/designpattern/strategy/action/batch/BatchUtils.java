@@ -1,8 +1,11 @@
 package com.berg.designpattern.strategy.action.batch;
 
+import com.berg.designpattern.strategy.example.Context;
+import com.berg.designpattern.strategy.example.strategy.Strategy;
 import org.apache.commons.collections4.CollectionUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Component;
 
 import java.time.Duration;
 import java.time.LocalDateTime;
@@ -13,12 +16,17 @@ import java.util.function.BinaryOperator;
 import java.util.function.Function;
 
 /**
- * 策略模式实战
- * 批处理工具
+ * 策略模式实战：批处理工具
+ * 在下面的批处理工具的代码中，使用了策略模式：
+ * {@link BatchUtils#batchOperate}方法的整体逻辑相当于{@link Context} 内容提供者对象
+ * 而参数{@link BatchUtils#batchOperate actionFunction} 和参数{@link BatchUtils#batchOperate resultFunction}
+ * 其实相当于{@link Strategy} 策略对象
+ * 具体的执行策略就由策略的子类来实现，传入了什么策略对象，就执行什么策略逻辑
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/30
  */
+@Component
 public class BatchUtils {
     /**
      * 日志打印对象
@@ -40,7 +48,8 @@ public class BatchUtils {
      * @param <T>            批次数据类型
      * @return 批量处理数据的结果
      */
-    public <T, R> R batchOperate(List<T> batchDataList, int batchCount, Function<List<T>, R> actionFunction, BinaryOperator<R> resultFunction) {
+    public <T, R> R batchOperate(List<T> batchDataList, int batchCount,
+                                 Function<List<T>, R> actionFunction, BinaryOperator<R> resultFunction) {
         Objects.requireNonNull(actionFunction, "逻辑处理对象不能为空");
         Objects.requireNonNull(resultFunction, "结果处理对象不能为空");
 
