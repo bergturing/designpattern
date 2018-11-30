@@ -1,26 +1,26 @@
-package com.berg.designpattern.singleton.method_10;
+package com.berg.designpattern.singleton.example.method8;
 
 import java.io.Serializable;
 
 /**
  * 使用双重校验锁实现单例模式
- * 解决序列化问题
+ * 线程安全、序列化安全
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/9
  */
-public class Singleton implements Serializable {
+public class Singleton8 implements Serializable {
 
-    private volatile static Singleton instance = null;
+    private volatile static Singleton8 instance = null;
 
-    private Singleton() {
+    private Singleton8() {
     }
 
-    public static Singleton of() {
+    public static Singleton8 of() {
         if (null == instance) {
-            synchronized (Singleton.class) {
+            synchronized (Singleton8.class) {
                 if (null == instance) {
-                    instance = new Singleton();
+                    instance = new Singleton8();
                 }
             }
         }

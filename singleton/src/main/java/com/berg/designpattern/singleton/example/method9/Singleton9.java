@@ -1,4 +1,4 @@
-package com.berg.designpattern.singleton.method_9;
+package com.berg.designpattern.singleton.example.method9;
 
 /**
  * 使用双重校验锁实现单例模式
@@ -7,18 +7,18 @@ package com.berg.designpattern.singleton.method_9;
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/9
  */
-public class Singleton {
-    private volatile static FinalWrapper<Singleton> helperWrapper = null;
+public class Singleton9 {
+    private volatile static FinalWrapper<Singleton9> helperWrapper = null;
 
-    private Singleton() {}
+    private Singleton9() {}
 
-    public static Singleton getHelper() {
-        FinalWrapper<Singleton> wrapper = helperWrapper;
+    public static Singleton9 getHelper() {
+        FinalWrapper<Singleton9> wrapper = helperWrapper;
 
         if (null == wrapper) {
-            synchronized (Singleton.class) {
+            synchronized (Singleton9.class) {
                 if (null == helperWrapper) {
-                    helperWrapper = new FinalWrapper<>(new Singleton());
+                    helperWrapper = new FinalWrapper<>(new Singleton9());
                 }
             }
             wrapper = helperWrapper;
