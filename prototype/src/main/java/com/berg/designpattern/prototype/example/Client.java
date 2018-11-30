@@ -1,11 +1,15 @@
 package com.berg.designpattern.prototype.example;
 
 import com.berg.designpattern.prototype.example.prototype.Prototype;
+import org.springframework.stereotype.Component;
 
 /**
+ * 客户端
+ *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/29
  */
+@Component
 public class Client {
 
     /**
