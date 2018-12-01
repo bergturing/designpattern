@@ -4,6 +4,7 @@ import com.berg.designpattern.abstractfactory.example.widget.Form;
 import com.berg.designpattern.abstractfactory.example.widget.Mouse;
 import com.berg.designpattern.abstractfactory.example.widget.blue.BlueForm;
 import com.berg.designpattern.abstractfactory.example.widget.blue.BlueMouse;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
@@ -14,13 +15,29 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class BlueThemeFactory implements ThemeFactory {
+    /**
+     * 蓝色窗体
+     */
+    private final Form blueForm;
+
+    /**
+     * 蓝色鼠标
+     */
+    private final Mouse blueMouse;
+
+    @Autowired
+    public BlueThemeFactory(Form blueForm, Mouse blueMouse) {
+        this.blueForm = blueForm;
+        this.blueMouse = blueMouse;
+    }
+
     @Override
     public Form createForm() {
-        return new BlueForm();
+        return this.blueForm;
     }
 
     @Override
     public Mouse createMouse() {
-        return new BlueMouse();
+        return this.blueMouse;
     }
 }

@@ -16,8 +16,10 @@ public class Computer {
      */
     private ThemeFactory themeFactory;
 
-    public void setThemeFactory(ThemeFactory themeFactory) {
+    public Computer setThemeFactory(ThemeFactory themeFactory) {
         this.themeFactory = themeFactory;
+
+        return this;
     }
 
     /**

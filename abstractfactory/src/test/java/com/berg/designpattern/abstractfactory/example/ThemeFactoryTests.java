@@ -11,7 +11,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
-public class ThemeFactoryTest extends AbstractfactoryApplicationTests {
+public class ThemeFactoryTests extends AbstractfactoryApplicationTests {
     /**
      * 计算机
      */
@@ -33,11 +33,9 @@ public class ThemeFactoryTest extends AbstractfactoryApplicationTests {
     @Test
     public void testThemeFactory() {
         //红色的主题
-        this.computer.setThemeFactory(this.redThemeFactory);
-        this.computer.open();
+        this.computer.setThemeFactory(this.redThemeFactory).open();
 
         //蓝色主题
-        this.computer.setThemeFactory(this.blueThemeFactory);
-        this.computer.open();
+        this.computer.setThemeFactory(this.blueThemeFactory).open();
     }
 }
