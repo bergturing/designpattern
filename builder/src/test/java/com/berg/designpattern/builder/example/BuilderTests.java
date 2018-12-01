@@ -10,14 +10,16 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
+ * 建造者的测试
+ * 
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
  */
-public class BuilderTest extends BuilderApplicationTests {
+public class BuilderTests extends BuilderApplicationTests {
     /**
      * 日志打印对象
      */
-    private static Logger logger = LoggerFactory.getLogger(BuilderTest.class);
+    private static Logger logger = LoggerFactory.getLogger(BuilderTests.class);
 
     /**
      * 低配建造指导者
