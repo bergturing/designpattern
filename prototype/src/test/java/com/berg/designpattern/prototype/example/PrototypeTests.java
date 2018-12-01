@@ -13,11 +13,11 @@ import org.springframework.beans.factory.annotation.Autowired;
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/29
  */
-public class PrototypeTest extends PrototypeApplicationTests {
+public class PrototypeTests extends PrototypeApplicationTests {
     /**
      * 日志打印对象
      */
-    private static Logger logger = LoggerFactory.getLogger(PrototypeTest.class);
+    private static Logger logger = LoggerFactory.getLogger(PrototypeTests.class);
 
     /**
      * 客户端
