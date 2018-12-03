@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * MacPro的建造者
+ * MacPro的构造器
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28

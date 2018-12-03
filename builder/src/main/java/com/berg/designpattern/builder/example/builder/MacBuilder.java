@@ -9,7 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 /**
- * Mac计算机构造者
+ * Mac计算机构造器
  *
  * @author bo.he02@hand-china.com
  * @apiNote 2018/11/28
