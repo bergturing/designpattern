@@ -20,6 +20,4 @@ public interface ITransferService {
      * @return 财务数据对象
      */
     List<FinanceDto> transfer(List<BusinessDto> businessDtoList, boolean cloneFlag);
-
-
 }
