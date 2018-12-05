@@ -2,7 +2,6 @@ package com.berg.designpattern.prototype.action.service;
 
 import com.berg.designpattern.prototype.PrototypeApplicationTests;
 import com.berg.designpattern.prototype.action.dto.BusinessDto;
-import com.berg.designpattern.prototype.action.dto.FinanceDto;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
