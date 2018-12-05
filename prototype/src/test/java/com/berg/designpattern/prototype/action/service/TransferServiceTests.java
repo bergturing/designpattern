@@ -35,7 +35,7 @@ public class TransferServiceTests extends PrototypeApplicationTests {
     @Test
     public void testTransfer() {
         //处理的数据的条数
-        int count = 1000000;
+        int count = 1000_000;
 
         //直接创建对象
         this.testTransfer(count, false);
