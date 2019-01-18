@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
 /**
  * Mac计算机构造器
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/28
  */
 @Component

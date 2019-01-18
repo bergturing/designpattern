@@ -10,7 +10,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 /**
  * 测试原型模式
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/29
  */
 public class PrototypeTests extends PrototypeApplicationTests {

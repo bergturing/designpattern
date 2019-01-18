@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 /**
  * 客户端
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/29
  */
 @Component

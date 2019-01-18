@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 /**
  * 转换服务实现
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/5
  */
 @Service

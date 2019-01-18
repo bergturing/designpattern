@@ -4,7 +4,7 @@ package com.berg.designpattern.singleton.example.method5;
  * 双重校验同步锁实现单例模式
  * 线程安全、序列化不安全
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/9
  */
 public class Singleton5 {

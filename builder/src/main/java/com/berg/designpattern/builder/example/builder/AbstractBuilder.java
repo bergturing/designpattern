@@ -5,7 +5,7 @@ import com.berg.designpattern.builder.example.product.Computer;
 /**
  * 构造器的抽象实现
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/30
  */
 public abstract class AbstractBuilder implements Builder {

@@ -5,7 +5,7 @@ import java.util.Date;
 /**
  * 查询条件对象
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/10
  */
 public class QueryCondition {

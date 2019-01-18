@@ -3,7 +3,7 @@ package com.berg.designpattern.proxy.example.subject;
 /**
  * 抽象主题角色
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/29
  */
 public interface Subject {

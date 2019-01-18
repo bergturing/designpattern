@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 端口生成器测试
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/10
  */
 public class ProtGeneratorTests extends SingletonApplicationTests {

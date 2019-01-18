@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 /**
  * 工厂方法创建的对象实现
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/11
  */
 public class FakeDangerous implements Dangerous {

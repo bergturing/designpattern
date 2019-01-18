@@ -9,7 +9,7 @@ import java.util.function.Supplier;
 /**
  * 单例模式测试工具类
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/30
  */
 @Component

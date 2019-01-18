@@ -23,7 +23,7 @@ import java.util.function.Function;
  * 其实相当于{@link Strategy} 策略对象
  * 具体的执行策略就由策略的子类来实现，传入了什么策略对象，就执行什么策略逻辑
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/30
  */
 @Component

@@ -1,7 +1,7 @@
 package com.berg.designpattern.prototype.example.prototype;
 
 /**
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/29
  */
 public interface Prototype extends Cloneable {

@@ -14,7 +14,7 @@ import java.util.List;
 /**
  * 员工服务测试类
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/10
  */
 public class EmployeeServiceTests extends BuilderApplicationTests {

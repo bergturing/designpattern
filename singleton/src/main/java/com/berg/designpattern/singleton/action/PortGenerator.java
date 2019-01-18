@@ -8,7 +8,7 @@ import java.util.Set;
 /**
  * 端口生成器
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/10
  */
 public class PortGenerator {

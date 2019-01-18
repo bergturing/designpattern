@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 /**
  * 测试Foo，Foo接口的实现
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/11
  */
 @Component

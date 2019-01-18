@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * 蓝色的主题
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/28
  */
 @Component

@@ -5,7 +5,7 @@ import java.math.BigDecimal;
 /**
  * 财务数据
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/5
  */
 public class FinanceDto implements Cloneable {

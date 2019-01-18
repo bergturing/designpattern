@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
  * 单例模式测试：代码块锁实现单例模式
  * 线程不安全、序列化不安全
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/30
  */
 public class SingletonMethod4Tests extends SingletonApplicationTests {

@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 员工服务的接口
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/10
  */
 public interface IEmployeeService {

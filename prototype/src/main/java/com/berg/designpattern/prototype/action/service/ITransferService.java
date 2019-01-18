@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * 转换服务接口
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/5
  */
 public interface ITransferService {

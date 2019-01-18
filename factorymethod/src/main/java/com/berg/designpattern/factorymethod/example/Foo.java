@@ -3,7 +3,7 @@ package com.berg.designpattern.factorymethod.example;
 /**
  * Foo接口，拥有工厂方法的接口
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/12/11
  */
 public interface Foo {

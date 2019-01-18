@@ -5,7 +5,7 @@ import com.berg.designpattern.builder.example.product.Computer;
 /**
  * 构造器的接口
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/28
  */
 public interface Builder {

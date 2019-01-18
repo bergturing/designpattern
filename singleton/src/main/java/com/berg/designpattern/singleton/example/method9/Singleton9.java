@@ -4,7 +4,7 @@ package com.berg.designpattern.singleton.example.method9;
  * 使用双重校验锁实现单例模式
  * 再次进阶版，final
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/9
  */
 public class Singleton9 {

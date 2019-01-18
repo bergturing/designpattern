@@ -13,7 +13,7 @@ import java.util.stream.Stream;
 /**
  * 批量工具测试
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/30
  */
 public class BatchUtilsTests extends StrategyApplicationTests {

@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 /**
  * 减法策略
  *
- * @author bo.he02@hand-china.com
+ * @author bergturing@qq.com
  * @apiNote 2018/11/29
  */
 @Component
